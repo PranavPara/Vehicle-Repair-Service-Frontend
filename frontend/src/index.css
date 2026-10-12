@@ -1,0 +1,127 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+}
+
+/* the blue bar at the top */
+.menu {
+  background-color: #1f3a4d;
+  color: white;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.menu .right {
+  margin-left: auto;
+}
+
+.page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.small-page {
+  max-width: 360px;
+  margin: 50px auto;
+  background-color: white;
+  padding: 20px 25px;
+  border: 1px solid #ccc;
+}
+
+.box {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 5px 20px 15px 20px;
+  margin: 15px 0;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 7px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #1f6f8b;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  margin: 5px 6px 5px 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  margin-top: 10px;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #e3e8ec;
+}
+
+.error {
+  background-color: #fadbd8;
+  color: #922b21;
+  padding: 8px;
+}
+
+.success {
+  background-color: #d5f5e3;
+  color: #1e7a45;
+  padding: 8px;
+}
+
+.info {
+  background-color: #d6eaf8;
+  color: #1b4f72;
+  padding: 8px;
+}
+
+/* the steps of the repair */
+.steps {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.step {
+  flex: 1;
+  text-align: center;
+  padding: 8px 4px;
+  font-size: 13px;
+  background-color: #d5dbdf;
+}
+
+.step.done {
+  background-color: #1f6f8b;
+  color: white;
+}
+
+.step.now {
+  background-color: #f4d03f;
+  font-weight: bold;
+}
+
+@media print {
+  .menu,
+  button {
+    display: none;
+  }
+}
