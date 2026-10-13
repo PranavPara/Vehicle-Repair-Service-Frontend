@@ -1,5 +1,6 @@
-// The address of our Spring Boot backend
-export const API = 'http://localhost:8080/api'
+// The address of our Spring Boot backend.
+// When deployed, Render gives the real address in VITE_API_URL. On your PC it is localhost.
+export const API = import.meta.env.VITE_API_URL || 'http://localhost:8080/api'
 
 // The steps of a repair, in order
 export const STEPS = ['REPORTED', 'DIAGNOSIS', 'ESTIMATE', 'APPROVED', 'REPAIR', 'COMPLETED', 'DELIVERED']
